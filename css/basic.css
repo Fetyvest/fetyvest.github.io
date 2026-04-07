@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+:root{
+    --bg-black: #121212;
+    --bg-black-opacity: #121212B0;
+    --black: #1A1A1A;
+    --bg-white: #F5F5F5;
+    --white: #E0E0E0;
+    --dark-shadow: darkgray;
+    --lightgray: lightgray;
+    --lightgray-opacity: #FFFFFF80;
+    
+    --accent-color: #0022FF;
+    --second-color: #4488FF;
+    
+    /* --accent-color: #ff0000;
+    --second-color: #ff4444; */
+    
+    /* --bg-black: #050505;
+    --black: hsl(0, 0%, 90%);
+    --bg-black-opacity: #050505B0;
+    --bg-white: hsl(0, 0%, 4%);
+    --white: #FFFFFF;
+    --dark-shadow: hsl(0, 0%, 34%);
+    --lightgray: hsl(0, 0%, 17%);
+    --lightgray-opacity: hsla(0, 0%, 0%, 0.498); */
+}
+
+*{
+    font-family: "Google Sans", sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.logo-block {
+    height: 50px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+    transition: all 0.2s;
+
+    &:hover {
+        color: var(--second-color);
+    }
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.logo-text {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: clamp(2.5rem, 0rem + 6.2338vw, 3rem);
+    letter-spacing: 2px;
+    color: var(--black);
+    text-shadow: 3px 3px 5px var(--dark-shadow);
+}
+
+.text {
+    font-size: clamp(1.25rem, 0rem + 3.1169vw, 1.5rem);
+    color: var(--black);
+}
